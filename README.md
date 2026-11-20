@@ -6,7 +6,7 @@ A high-performance static website for **Kush Synthetics Pvt. Ltd.**, ready for d
 
 ## Clean URL Directory Routes
 
-All routes use folder-based clean URLs (with `index.html` inside each directory) so URLs are clean without `.html` extensions:
+All routes follow the directory-based clean URL pattern (`folder/index.html`) so URLs display cleanly without `.html` extensions:
 
 | Clean URL Route | Source File | Description |
 | :--- | :--- | :--- |
@@ -62,57 +62,13 @@ kush-synthetics/
 │   ├── images/                     # Logos, sliders, product photos
 │   └── js/                         # jQuery, bootstrap, swiper, masonry, all.js
 │
-├── _php_backup/                    # Modular PHP Source & Static Generator
-│   ├── modular/                    # Reusable PHP modules
-│   │   ├── head.php
-│   │   ├── header.php
-│   │   ├── menu.php
-│   │   └── footer.php
-│   ├── index.php
-│   ├── about/index.php
-│   ├── products/
-│   │   ├── index.php
-│   │   ├── ks-ud/index.php
-│   │   ├── ks-bix/index.php
-│   │   ├── ks-trx/index.php
-│   │   ├── ks-qux/index.php
-│   │   └── stitch-bonded/index.php
-│   ├── quality/index.php
-│   ├── news/index.php
-│   ├── contact/index.php
-│   ├── generate_static.php         # Generates static HTML folder structure
-│   └── original_php/               # Untouched original raw PHP backup
-│
-├── .gitattributes
-├── .gitignore
-├── .nojekyll
-├── robots.txt
-├── sitemap.xml
-├── FOLDER_STRUCTURE.md
-└── _php_backup.zip
-```
-
----
-
-## How to Update Content & Regenerate Static HTML
-
-The website source code is organized into clean, reusable PHP modules inside `_php_backup/modular/`:
-- **Header & Logo**: Edit `_php_backup/modular/header.php`
-- **Navigation Bar**: Edit `_php_backup/modular/menu.php`
-- **Footer & Scripts**: Edit `_php_backup/modular/footer.php`
-- **Meta / Head**: Edit `_php_backup/modular/head.php`
-- **Page Contents**: Edit the respective page in `_php_backup/<route>/index.php`
-
-To regenerate all static HTML files automatically, run:
-
-```bash
-php _php_backup/generate_static.php
-```
-
-Or with full XAMPP PHP path on Windows:
-
-```powershell
-C:\xampp\php\php.exe _php_backup\generate_static.php
+├── .gitattributes                  # Repository settings
+├── .gitignore                      # Ignore rules
+├── .nojekyll                       # GitHub Pages Jekyll bypass
+├── CNAME                           # Custom domain configuration (kushsynthetics.co.in)
+├── robots.txt                      # Crawler instructions
+├── sitemap.xml                     # XML Sitemap
+└── FOLDER_STRUCTURE.md             # Complete structure documentation
 ```
 
 ---
@@ -122,5 +78,5 @@ C:\xampp\php\php.exe _php_backup\generate_static.php
 1. Go to repository **Settings** on GitHub: `https://github.com/7dayscreation/kush-synthetics/settings/pages`
 2. Under **Build and deployment** > **Source**, select **Deploy from a branch**.
 3. Under **Branch**, select `main` branch and `/ (root)` folder.
-4. Click **Save**. The website will be live in minutes at:  
-   `https://7dayscreation.github.io/kush-synthetics/`
+4. Custom Domain is set via `CNAME` (`kushsynthetics.co.in`).
+5. Ensure **Enforce HTTPS** is enabled.

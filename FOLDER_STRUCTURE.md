@@ -34,74 +34,48 @@ kush-synthetics/
 │       └── index.html               # Contact details (India, USA, Europe)
 │
 ├── ⚙️ CONFIGURATION & SEO FILES
-│   ├── .gitattributes               # Language stats configuration (keeps repo marked as HTML)
+│   ├── .gitattributes               # Language stats configuration
 │   ├── .gitignore                   # Ignores temp, IDE, and OS cache files
 │   ├── .nojekyll                    # Disables Jekyll processing on GitHub Pages
+│   ├── CNAME                        # Custom domain (kushsynthetics.co.in)
 │   ├── robots.txt                   # Crawler rules for Google & other search engines
 │   ├── sitemap.xml                  # XML Sitemap with clean URL structure
 │   ├── README.md                    # Project documentation & deployment guide
-│   ├── FOLDER_STRUCTURE.md          # This documentation
-│   └── _php_backup.zip              # Compressed archive of all PHP source & templates
+│   └── FOLDER_STRUCTURE.md          # This documentation
 │
-├── 🎨 ASSETS FOLDER (assets/)
-│   ├── css/                         # Stylesheets
-│   │   ├── bootstrap.min.css        # Responsive layout grid & styles
-│   │   ├── font-awesome.min.css     # FontAwesome icon styles
-│   │   └── style.css                # Custom theme & responsive CSS (Google Fonts HTTPS)
-│   │
-│   ├── fonts/                       # Web & Icon Fonts
-│   │   ├── fontawesome-webfont*     # FontAwesome webfonts (eot, svg, ttf, woff)
-│   │   └── glyphicons-halflings*    # Bootstrap Glyphicons
-│   │
-│   ├── images/                      # Media & Graphics
-│   │   ├── logo.png                 # Main header & footer logo
-│   │   ├── Kush_logo-big.png        # Brand logo asset
-│   │   ├── home-slider.jpg          # Homepage top slider banner
-│   │   ├── about-slider.jpg         # About page top slider banner
-│   │   ├── about-image1.jpg         # About Us history section image
-│   │   ├── about-image2.jpg         # About Us mission section image
-│   │   ├── about-image3.jpg         # About Us infrastructure section image
-│   │   ├── world.jpg                # Quality page global map graphic
-│   │   ├── 1-k.png, 1-k1.png, ...   # Product showcase slider images
-│   │   ├── ks-bix.png               # Product image: Biaxial Fabric
-│   │   ├── ks-qux.png, ks-qux1.png  # Product images: Quadaxial Fabric
-│   │   ├── ks-trx.png, ks-trx1.png  # Product images: Triaxial Fabric
-│   │   ├── ks-ud-main.png           # Product image: Unidirectional Fabric
-│   │   ├── stitch_bonded.png        # Product image: Stitch Bonded Fabric
-│   │   └── plus.png, quality.png    # UI icons & badges
-│   │
-│   ├── js/                          # JavaScript Libraries & Main Scripts
-│   │   ├── jquery-1.11.2.min.js     # jQuery Core library
-│   │   ├── bootstrap.min.js         # Bootstrap UI components
-│   │   ├── idangerous.swiper.min.js # Swiper banner slider
-│   │   ├── masonry.pkgd.min.js      # Masonry responsive portfolio grid
-│   │   └── all.js                   # Mobile menu toggler & slider init
-│   │
-│   └── scripts/                     # Fallback alias directory for js/
-│
-└── 🗄️ PHP BACKUP & MODULAR TEMPLATES (_php_backup/)
-    ├── 🧩 modular/                  # Reusable PHP Components
-    │   ├── head.php                 # Dynamic HTML <head> with meta tags & CSS links
-    │   ├── header.php               # Header markup with logo & mobile menu toggle
-    │   ├── menu.php                 # Navigation menu with active item logic
-    │   └── footer.php               # Footer markup, copyright & script tags
+└── 🎨 ASSETS FOLDER (assets/)
+    ├── css/                         # Stylesheets
+    │   ├── bootstrap.min.css        # Responsive layout grid & styles
+    │   ├── font-awesome.min.css     # FontAwesome icon styles
+    │   └── style.css                # Custom theme & responsive CSS (Google Fonts HTTPS)
     │
-    ├── 📄 Modular PHP Pages (Clean Directory Structure)
-    │   ├── index.php
-    │   ├── about/index.php
-    │   ├── products/
-    │   │   ├── index.php
-    │   │   ├── ks-ud/index.php
-    │   │   ├── ks-bix/index.php
-    │   │   ├── ks-trx/index.php
-    │   │   ├── ks-qux/index.php
-    │   │   └── stitch-bonded/index.php
-    │   ├── quality/index.php
-    │   ├── news/index.php
-    │   └── contact/index.php
+    ├── fonts/                       # Web & Icon Fonts
+    │   ├── fontawesome-webfont*     # FontAwesome webfonts (eot, svg, ttf, woff)
+    │   └── glyphicons-halflings*    # Bootstrap Glyphicons
     │
-    ├── ⚡ Static Generator
-    │   └── generate_static.php      # Rebuilds all clean URL HTML pages into root
+    ├── images/                      # Media & Graphics
+    │   ├── logo.png                 # Main header & footer logo
+    │   ├── Kush_logo-big.png        # Brand logo asset
+    │   ├── home-slider.jpg          # Homepage top slider banner
+    │   ├── about-slider.jpg         # About page top slider banner
+    │   ├── about-image1.jpg         # About Us history section image
+    │   ├── about-image2.jpg         # About Us mission section image
+    │   ├── about-image3.jpg         # About Us infrastructure section image
+    │   ├── world.jpg                # Quality page global map graphic
+    │   ├── 1-k.png, 1-k1.png, ...   # Product showcase slider images
+    │   ├── ks-bix.png               # Product image: Biaxial Fabric
+    │   ├── ks-qux.png, ks-qux1.png  # Product images: Quadaxial Fabric
+    │   ├── ks-trx.png, ks-trx1.png  # Product images: Triaxial Fabric
+    │   ├── ks-ud-main.png           # Product image: Unidirectional Fabric
+    │   ├── stitch_bonded.png        # Product image: Stitch Bonded Fabric
+    │   └── plus.png, quality.png    # UI icons & badges
     │
-    └── 📦 original_php/             # Raw untouched original PHP files (Safe Archive)
+    ├── js/                          # JavaScript Libraries & Main Scripts
+    │   ├── jquery-1.11.2.min.js     # jQuery Core library
+    │   ├── bootstrap.min.js         # Bootstrap UI components
+    │   ├── idangerous.swiper.min.js # Swiper banner slider
+    │   ├── masonry.pkgd.min.js      # Masonry responsive portfolio grid
+    │   └── all.js                   # Mobile menu toggler & slider init
+    │
+    └── scripts/                     # Fallback alias directory for js/
 ```

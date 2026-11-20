@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kushsynthetics.com/sitemap.xml
+Sitemap: https://kushsynthetics.co.in/sitemap.xml

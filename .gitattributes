@@ -1,3 +1,2 @@
-# Exclude backup from GitHub Linguist language stats
-_php_backup/* linguist-vendored
-_php_backup/**/* linguist-vendored
+# Git attributes
+* text=auto eol=lf
