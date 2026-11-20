@@ -1,35 +1,53 @@
-# Kush Synthetics - Complete Folder Structure
+# Kush Synthetics - Complete Clean URL Folder Structure
+
+All routes follow the directory-based clean URL pattern (`folder/index.html`) so URLs display cleanly without `.html` extensions.
 
 ```
 kush-synthetics/
 │
-├── 🌐 STATIC HTML PAGES (Hosting Ready)
-│   ├── index.html                   # Home page / Company overview
-│   ├── about.html                   # About Us, History, Mission & Infrastructure
-│   ├── products.html                # Products gallery / listing
-│   ├── quality.html                 # Quality Control & ISO 9001:2008 Certifications
-│   ├── news.html                    # News & Updates
-│   ├── contact.html                 # Contact details (India, USA, Europe)
-│   ├── ks-bix.html                  # Product Detail: KS - BIX (Biaxial Fabric)
-│   ├── ks-qux.html                  # Product Detail: KS - QUX (Quadaxial Fabric)
-│   ├── ks-trx.html                  # Product Detail: KS - TRX (Triaxial Fabric)
-│   ├── ks-ud.html                   # Product Detail: KS – UD 0° or 90° (Unidirectional Fabric)
-│   └── stitch-bonded.html           # Product Detail: Stitch Bonded Non Crimp Fabrics (NCFs)
+├── 🌐 CLEAN URL FOLDER ROUTES
+│   ├── index.html                   # sitename/ (Home page)
+│   │
+│   ├── about/                       # sitename/about/
+│   │   └── index.html               # About Us, History, Mission, Infrastructures
+│   │
+│   ├── products/                    # sitename/products/
+│   │   ├── index.html               # Products listing & gallery
+│   │   ├── ks-ud/                   # sitename/products/ks-ud/
+│   │   │   └── index.html           # KS – UD 0° or 90° (Unidirectional Fabric)
+│   │   ├── ks-bix/                  # sitename/products/ks-bix/
+│   │   │   └── index.html           # KS - BIX (Biaxial Fabric)
+│   │   ├── ks-trx/                  # sitename/products/ks-trx/
+│   │   │   └── index.html           # KS - TRX (Triaxial Fabric)
+│   │   ├── ks-qux/                  # sitename/products/ks-qux/
+│   │   │   └── index.html           # KS - QUX (Quadaxial Fabric)
+│   │   └── stitch-bonded/           # sitename/products/stitch-bonded/
+│   │       └── index.html           # Stitch Bonded Non Crimp Fabrics (NCFs)
+│   │
+│   ├── quality/                     # sitename/quality/
+│   │   └── index.html               # Quality Control & ISO 9001:2008 Certifications
+│   │
+│   ├── news/                        # sitename/news/
+│   │   └── index.html               # News & Updates
+│   │
+│   └── contact/                     # sitename/contact/
+│       └── index.html               # Contact details (India, USA, Europe)
 │
 ├── ⚙️ CONFIGURATION & SEO FILES
 │   ├── .gitattributes               # Language stats configuration (keeps repo marked as HTML)
 │   ├── .gitignore                   # Ignores temp, IDE, and OS cache files
 │   ├── .nojekyll                    # Disables Jekyll processing on GitHub Pages
 │   ├── robots.txt                   # Crawler rules for Google & other search engines
-│   ├── sitemap.xml                  # XML Sitemap for all 11 pages
-│   ├── README.md                    # Project documentation & GitHub Pages deployment guide
+│   ├── sitemap.xml                  # XML Sitemap with clean URL structure
+│   ├── README.md                    # Project documentation & deployment guide
+│   ├── FOLDER_STRUCTURE.md          # This documentation
 │   └── _php_backup.zip              # Compressed archive of all PHP source & templates
 │
 ├── 🎨 ASSETS FOLDER (assets/)
 │   ├── css/                         # Stylesheets
 │   │   ├── bootstrap.min.css        # Responsive layout grid & styles
 │   │   ├── font-awesome.min.css     # FontAwesome icon styles
-│   │   └── style.css                # Custom site design & responsive CSS
+│   │   └── style.css                # Custom theme & responsive CSS (Google Fonts HTTPS)
 │   │
 │   ├── fonts/                       # Web & Icon Fonts
 │   │   ├── fontawesome-webfont*     # FontAwesome webfonts (eot, svg, ttf, woff)
@@ -68,33 +86,22 @@ kush-synthetics/
     │   ├── menu.php                 # Navigation menu with active item logic
     │   └── footer.php               # Footer markup, copyright & script tags
     │
-    ├── 📄 Modular PHP Pages
-    │   ├── index.php                # Uses modular components
-    │   ├── about.php                # Uses modular components
-    │   ├── products.php             # Uses modular components
-    │   ├── quality.php              # Uses modular components
-    │   ├── news.php                 # Uses modular components
-    │   ├── contact.php              # Uses modular components
-    │   ├── ks-bix.php               # Uses modular components
-    │   ├── ks-qux.php               # Uses modular components
-    │   ├── ks-trx.php               # Uses modular components
-    │   ├── ks-ud.php                # Uses modular components
-    │   └── stitch-bonded.php        # Uses modular components
+    ├── 📄 Modular PHP Pages (Clean Directory Structure)
+    │   ├── index.php
+    │   ├── about/index.php
+    │   ├── products/
+    │   │   ├── index.php
+    │   │   ├── ks-ud/index.php
+    │   │   ├── ks-bix/index.php
+    │   │   ├── ks-trx/index.php
+    │   │   ├── ks-qux/index.php
+    │   │   └── stitch-bonded/index.php
+    │   ├── quality/index.php
+    │   ├── news/index.php
+    │   └── contact/index.php
     │
     ├── ⚡ Static Generator
-    │   └── generate_static.php      # Rebuilds all 11 HTML pages into root folder
+    │   └── generate_static.php      # Rebuilds all clean URL HTML pages into root
     │
     └── 📦 original_php/             # Raw untouched original PHP files (Safe Archive)
-        ├── index.php
-        ├── about.php
-        ├── products.php
-        ├── quality.php
-        ├── news.php
-        ├── contact.php
-        ├── ks-bix.php
-        ├── ks-qux.php
-        ├── ks-trx.php
-        ├── ks-ud.php
-        ├── stitch-bonded.php
-        └── footer.php
 ```

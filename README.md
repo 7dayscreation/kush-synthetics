@@ -4,21 +4,23 @@ A high-performance static website for **Kush Synthetics Pvt. Ltd.**, ready for d
 
 ---
 
-## Site Structure & Routes
+## Clean URL Directory Routes
 
-| Route | Source File | Description |
+All routes use folder-based clean URLs (with `index.html` inside each directory) so URLs are clean without `.html` extensions:
+
+| Clean URL Route | Source File | Description |
 | :--- | :--- | :--- |
-| `/` or `/index.html` | `index.html` | Homepage & company overview |
-| `/about.html` | `about.html` | About Us, History, Mission & Infrastructure |
-| `/products.html` | `products.html` | Products gallery & overview |
-| `/quality.html` | `quality.html` | Quality Management System & ISO 9001:2008 Certifications |
-| `/news.html` | `news.html` | News & announcements |
-| `/contact.html` | `contact.html` | Contact information (India, USA, Europe) |
-| `/ks-bix.html` | `ks-bix.html` | Product details: KS - BIX (Biaxial Fabric) |
-| `/ks-qux.html` | `ks-qux.html` | Product details: KS - QUX (Quadaxial Fabric) |
-| `/ks-trx.html` | `ks-trx.html` | Product details: KS - TRX (Triaxial Fabric) |
-| `/ks-ud.html` | `ks-ud.html` | Product details: KS – UD 0° or 90° (Unidirectional Fabric) |
-| `/stitch-bonded.html` | `stitch-bonded.html` | Product details: Stitch Bonded Non Crimp Fabrics (NCFs) |
+| `/` | `index.html` | Homepage & company overview |
+| `/about/` | `about/index.html` | About Us, History, Mission & Infrastructure |
+| `/products/` | `products/index.html` | Products gallery & overview |
+| `/products/ks-ud/` | `products/ks-ud/index.html` | KS – UD 0° or 90° (Unidirectional Fabric) |
+| `/products/ks-bix/` | `products/ks-bix/index.html` | KS - BIX (Biaxial Fabric) |
+| `/products/ks-trx/` | `products/ks-trx/index.html` | KS - TRX (Triaxial Fabric) |
+| `/products/ks-qux/` | `products/ks-qux/index.html` | KS - QUX (Quadaxial Fabric) |
+| `/products/stitch-bonded/` | `products/stitch-bonded/index.html` | Stitch Bonded Non Crimp Fabrics (NCFs) |
+| `/quality/` | `quality/index.html` | Quality Management System & ISO 9001:2008 Certifications |
+| `/news/` | `news/index.html` | News & announcements |
+| `/contact/` | `contact/index.html` | Contact information (India, USA, Europe) |
 
 ---
 
@@ -26,46 +28,68 @@ A high-performance static website for **Kush Synthetics Pvt. Ltd.**, ready for d
 
 ```
 kush-synthetics/
-├── .gitattributes          # Configures linguist to vendor PHP backup
-├── .gitignore              # Ignores OS/IDE cache and temp files
-├── .nojekyll               # Disables Jekyll processing on GitHub Pages
-├── index.html              # Static HTML Homepage
-├── about.html              # Static HTML About page
-├── products.html           # Static HTML Products page
-├── quality.html            # Static HTML Quality page
-├── news.html               # Static HTML News page
-├── contact.html            # Static HTML Contact page
-├── ks-bix.html             # Static HTML Biaxial Fabric page
-├── ks-qux.html             # Static HTML Quadaxial Fabric page
-├── ks-trx.html             # Static HTML Triaxial Fabric page
-├── ks-ud.html              # Static HTML Unidirectional Fabric page
-├── stitch-bonded.html      # Static HTML Stitch Bonded Fabric page
-├── robots.txt              # Search engine crawler instructions
-├── sitemap.xml             # XML Sitemap for SEO indexing
-├── README.md               # Project documentation
-├── assets/
-│   ├── css/                # Stylesheets (bootstrap, font-awesome, style.css)
-│   ├── fonts/              # Icon fonts (FontAwesome, Glyphicons)
-│   ├── images/             # Images & logos
-│   └── js/                 # JavaScript libraries & main script
-└── _php_backup/            # Full modular PHP source & generator
-    ├── modular/
-    │   ├── head.php        # Modular HTML <head> with meta & CSS links
-    │   ├── header.php      # Modular <header> with logo & menu
-    │   ├── menu.php        # Modular navigation menu with active state
-    │   └── footer.php      # Modular <footer> & script tags
-    ├── generate_static.php # Static HTML generation script
-    ├── index.php
-    ├── about.php
-    ├── products.php
-    ├── quality.php
-    ├── news.php
-    ├── contact.php
-    ├── ks-bix.php
-    ├── ks-qux.php
-    ├── ks-trx.php
-    ├── ks-ud.php
-    └── stitch-bonded.php
+│
+├── index.html                      # Homepage (sitename/)
+│
+├── about/                          # About section (sitename/about/)
+│   └── index.html
+│
+├── products/                       # Products section (sitename/products/)
+│   ├── index.html                  # Products listing & gallery
+│   ├── ks-ud/                      # (sitename/products/ks-ud/)
+│   │   └── index.html
+│   ├── ks-bix/                     # (sitename/products/ks-bix/)
+│   │   └── index.html
+│   ├── ks-trx/                     # (sitename/products/ks-trx/)
+│   │   └── index.html
+│   ├── ks-qux/                     # (sitename/products/ks-qux/)
+│   │   └── index.html
+│   └── stitch-bonded/              # (sitename/products/stitch-bonded/)
+│       └── index.html
+│
+├── quality/                        # Quality section (sitename/quality/)
+│   └── index.html
+│
+├── news/                           # News section (sitename/news/)
+│   └── index.html
+│
+├── contact/                        # Contact section (sitename/contact/)
+│   └── index.html
+│
+├── assets/                         # Centralized Assets
+│   ├── css/                        # bootstrap, font-awesome, style.css
+│   ├── fonts/                      # FontAwesome, Glyphicons
+│   ├── images/                     # Logos, sliders, product photos
+│   └── js/                         # jQuery, bootstrap, swiper, masonry, all.js
+│
+├── _php_backup/                    # Modular PHP Source & Static Generator
+│   ├── modular/                    # Reusable PHP modules
+│   │   ├── head.php
+│   │   ├── header.php
+│   │   ├── menu.php
+│   │   └── footer.php
+│   ├── index.php
+│   ├── about/index.php
+│   ├── products/
+│   │   ├── index.php
+│   │   ├── ks-ud/index.php
+│   │   ├── ks-bix/index.php
+│   │   ├── ks-trx/index.php
+│   │   ├── ks-qux/index.php
+│   │   └── stitch-bonded/index.php
+│   ├── quality/index.php
+│   ├── news/index.php
+│   ├── contact/index.php
+│   ├── generate_static.php         # Generates static HTML folder structure
+│   └── original_php/               # Untouched original raw PHP backup
+│
+├── .gitattributes
+├── .gitignore
+├── .nojekyll
+├── robots.txt
+├── sitemap.xml
+├── FOLDER_STRUCTURE.md
+└── _php_backup.zip
 ```
 
 ---
@@ -77,7 +101,7 @@ The website source code is organized into clean, reusable PHP modules inside `_p
 - **Navigation Bar**: Edit `_php_backup/modular/menu.php`
 - **Footer & Scripts**: Edit `_php_backup/modular/footer.php`
 - **Meta / Head**: Edit `_php_backup/modular/head.php`
-- **Page Contents**: Edit the respective page in `_php_backup/<page>.php`
+- **Page Contents**: Edit the respective page in `_php_backup/<route>/index.php`
 
 To regenerate all static HTML files automatically, run:
 

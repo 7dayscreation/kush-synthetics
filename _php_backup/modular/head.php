@@ -2,6 +2,7 @@
 if (!isset($pageTitle) || empty($pageTitle)) {
     $pageTitle = 'Kush Synthetics Pvt.Ltd.';
 }
+$rootPrefix = isset($rootPrefix) ? $rootPrefix : '';
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,9 +15,9 @@ if (!isset($pageTitle) || empty($pageTitle)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no" />
   
-	<link rel="shortcut icon" href="favicon.ico"/>
-  	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
-  	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"/>
-  	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<link rel="shortcut icon" href="<?php echo $rootPrefix; ?>favicon.ico"/>
+  	<link rel="stylesheet" type="text/css" href="<?php echo $rootPrefix; ?>assets/css/bootstrap.min.css"/>
+  	<link rel="stylesheet" type="text/css" href="<?php echo $rootPrefix; ?>assets/css/font-awesome.min.css"/>
+  	<link rel="stylesheet" type="text/css" href="<?php echo $rootPrefix; ?>assets/css/style.css"/>
 
 </head>

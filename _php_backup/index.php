@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Kush Synthetics Pvt.Ltd. - Home";
 $currentPage = "home";
+$rootPrefix = "";
 include __DIR__ . '/modular/head.php';
 ?>
 <body>
@@ -45,7 +46,7 @@ include __DIR__ . '/modular/head.php';
              <div class="agency-block">
                  <h4>OUR PRODUCTS</h4>
                 <p align="justify">Kush manufactures Uni-directional, biaxial and multiaxial fabrics through stitch-bonding of material made of unbent fibres with no elongation. Therefore these fabrics are also called Non – Crimp Fabrics or NCFs.</p><br>
-                <span><a href="products.php">More details</a></span>
+                <span><a href="products/">More details</a></span>
              </div>
         </div>
     </div>

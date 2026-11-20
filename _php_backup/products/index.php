@@ -1,44 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-	<title>Products - Kush Synthetics Pvt.Ltd.</title>
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-	<meta name="generator" content="2014.2.1.284"/>
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no" />
-  
-	<link rel="shortcut icon" href="favicon.ico"/>
-  	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
-  	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"/>
-  	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-
-</head>
+<?php
+$pageTitle = "Products - Kush Synthetics Pvt.Ltd.";
+$currentPage = "products";
+$rootPrefix = "../";
+include dirname(__DIR__) . '/modular/head.php';
+?>
 <body>
 	<div class="preload"><ul class="loader"><li></li><li></li><li></li></ul></div>
-	<header>
-    <div class="container">
-        <div class="row">
-            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Kush Synthetics Logo"/></a></div>
-            <div class="nav-menu-icon">
-                <a href="#"><i></i></a>
-            </div> 
-        </div>
-        <div class="row">
-    <div class="navigation">
-        <nav> 
-            <a href="index.html" class="">HOME</a>
-            <a href="about.html" class="">ABOUT</a>
-            <a href="products.html" class="active">PRODUCTS</a>
-            <a href="quality.html" class="">QUALITY</a>
-            <a href="news.html" class="">NEWS</a>
-            <a href="contact.html" class="">CONTACT</a>
-        </nav>
-    </div>
-</div>
-    </div>
-</header>
+	<?php include dirname(__DIR__) . '/modular/header.php'; ?>
 
 <div class="container">
 	<div class="main-container">
@@ -54,11 +22,11 @@
 					<div class="news-item">
 						<div class="work-block">
 							<div class="news-layer">
-								<a href="ks-ud.html">
-									<img src="assets/images/plus.png" alt="plus" class="plus">
+								<a href="ks-ud/">
+									<img src="<?php echo $rootPrefix; ?>assets/images/plus.png" alt="plus" class="plus">
                                     <div class="hover-img"></div>
 								</a>
-                                <img src="assets/images/1-k.png" alt="work picture">
+                                <img src="<?php echo $rootPrefix; ?>assets/images/1-k.png" alt="work picture">
 							</div>
                             <div class="work-title bg-white">
                             	<h5>KS – UD 0° or 90°</h5>
@@ -69,11 +37,11 @@
                              <div class="news-item">
                                  <div class="work-block">
                                       <div class="news-layer">
-                                        <a href="stitch-bonded.html">
-                                          <img src="assets/images/plus.png" alt="plus" class="plus">
+                                        <a href="stitch-bonded/">
+                                          <img src="<?php echo $rootPrefix; ?>assets/images/plus.png" alt="plus" class="plus">
                                             <div class="hover-img"></div>
                                         </a>
-                                        <img src="assets/images/stitch_bonded.png" alt="work picture">
+                                        <img src="<?php echo $rootPrefix; ?>assets/images/stitch_bonded.png" alt="work picture">
                                       </div>
                                       <div class="work-title bg-white">
                                           <h5>Stitch Bonded Non</h5>
@@ -84,11 +52,11 @@
                              <div class="news-item">
                                  <div class="work-block">
                                       <div class="news-layer">
-                                        <a href="ks-bix.html">
-                                          <img src="assets/images/plus.png" alt="plus" class="plus">
+                                        <a href="ks-bix/">
+                                          <img src="<?php echo $rootPrefix; ?>assets/images/plus.png" alt="plus" class="plus">
                                             <div class="hover-img"></div>
                                         </a>
-                                            <img src="assets/images/ks-bix.png" alt="work picture">
+                                            <img src="<?php echo $rootPrefix; ?>assets/images/ks-bix.png" alt="work picture">
                                       </div>
                                       <div class="work-title bg-white">
                                           <h5>KS – BIX </h5>
@@ -99,11 +67,11 @@
                              <div class="news-item">
                                  <div class="work-block">
                                       <div class="news-layer">
-                                        <a href="ks-trx.html">
-                                          <img src="assets/images/plus.png" alt="plus" class="plus">
+                                        <a href="ks-trx/">
+                                          <img src="<?php echo $rootPrefix; ?>assets/images/plus.png" alt="plus" class="plus">
                                             <div class="hover-img"></div>
                                         </a>
-                                            <img src="assets/images/ks-trx1.png" alt="work picture">
+                                            <img src="<?php echo $rootPrefix; ?>assets/images/ks-trx1.png" alt="work picture">
                                       </div>
                                       <div class="work-title bg-white">
                                           <h5>KS – TRX</h5>
@@ -114,11 +82,11 @@
                              <div class="news-item">
                                  <div class="work-block">
                                       <div class="news-layer">
-                                        <a href="ks-qux.html">
-                                          <img src="assets/images/plus.png" alt="plus" class="plus">
+                                        <a href="ks-qux/">
+                                          <img src="<?php echo $rootPrefix; ?>assets/images/plus.png" alt="plus" class="plus">
                                             <div class="hover-img"></div>
                                         </a>
-                                            <img src="assets/images/ks-qux1.png" alt="work picture">
+                                            <img src="<?php echo $rootPrefix; ?>assets/images/ks-qux1.png" alt="work picture">
                                       </div>
                                       <div class="work-title bg-white">
                                           <h5>KS – QUX</h5>
@@ -129,7 +97,7 @@
                              <div class="news-item">
                                  <div class="work-block">
                                       <div class="news-layer">
-                                        <img src="assets/images/quality.png" alt="work picture">
+                                        <img src="<?php echo $rootPrefix; ?>assets/images/quality.png" alt="work picture">
                                       </div>
                                       <div class="work-title bg-white">
                                           <h5>Quality Control</h5>
@@ -143,30 +111,7 @@
            </div>
       </div>
 
-		<footer>
-		<div class="container">
-			<div class="row">
-				<div class="button-top">
-					<div class="button-totop">
-						<span>&lt;</span>
-					</div>
-				</div>
-				<div class="footer-logo">
-					<a href="index.html"><img src="assets/images/logo.png" alt="Kush Synthetics Logo"/></a>
-					<div class="copyright">
-						<span>&copy; 2015 Copyright - Created by 7 Days Creation</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- JS includes -->
-  	<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
-   	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-  	<script src="assets/js/idangerous.swiper.min.js" type="text/javascript"></script>
-	<script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
-  	<script src="assets/js/all.js" type="text/javascript"></script>
+	<?php include dirname(__DIR__) . '/modular/footer.php'; ?>
 
 </body>
 </html>

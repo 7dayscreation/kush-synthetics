@@ -1,21 +1,22 @@
 <?php
-$pageTitle = "KS - UD (Unidirectional Fabric) - Kush Synthetics Pvt.Ltd.";
+$pageTitle = "KS – UD 0° or 90° (Unidirectional Fabric) - Kush Synthetics Pvt.Ltd.";
 $currentPage = "ks-ud";
-include __DIR__ . '/modular/head.php';
+$rootPrefix = "../../";
+include dirname(dirname(__DIR__)) . '/modular/head.php';
 ?>
 <body>
 	<div class="preload"><ul class="loader"><li></li><li></li><li></li></ul></div>
-	<?php include __DIR__ . '/modular/header.php'; ?>
+	<?php include dirname(dirname(__DIR__)) . '/modular/header.php'; ?>
 
 <div class="container">
 	<div class="main-container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
             	<div class="work-detail">
-                	<img src="assets/images/ks-ud-main.png" alt="portfolio image">
+                	<img src="<?php echo $rootPrefix; ?>assets/images/ks-ud-main.png" alt="portfolio image">
 					<div class="portfolio-text bg-white">
                     	<div class="back-button">
-                        	<a href="products.php">BACK</a>
+                        	<a href="<?php echo $rootPrefix; ?>products/">BACK</a>
 						</div>
 						<div class="work-detail-title">
                         	<h4>KS – UD 0° or 90°</h4>
@@ -31,7 +32,7 @@ include __DIR__ . '/modular/head.php';
 	</div>
 </div>
 
-	<?php include __DIR__ . '/modular/footer.php'; ?>
+	<?php include dirname(dirname(__DIR__)) . '/modular/footer.php'; ?>
 
 </body>
 </html>
